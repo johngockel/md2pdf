@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/cloud-computing-ss25/jgo-md2pdf-git', '.']
+
+images:
+  - 'gcr.io/cloud-computing-ss25/jgo-md2pdf-git'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
