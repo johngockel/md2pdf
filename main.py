@@ -15,5 +15,5 @@ def md2pdf():
 
     output_pdf = os.path.join(tempfile.gettempdir(), "output.pdf")
     pypandoc.convert_file(filepath, "pdf", outputfile=output_pdf)
-
+    
     return send_file(output_pdf, mimetype="application/pdf")
